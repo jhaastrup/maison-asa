@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Àṣà — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-content">
+      ✦ SPRING/SUMMER 2026 COLLECTION NOW AVAILABLE &nbsp;&nbsp;&nbsp; ✦ LAGOS FASHION WEEK — APRIL 15-18 &nbsp;&nbsp;&nbsp; ✦ BOOK YOUR PRIVATE STYLING SESSION TODAY &nbsp;&nbsp;&nbsp; ✦ FREE SHIPPING ON ORDERS OVER ₦50,000 &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Maison <span>Àṣà</span></a>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Maison <span>Àṣà</span></h1>
+    <p>Where African Heritage Meets Modern Elegance</p>
+    <a href="products.html" class="btn">Explore Collections</a>
+  </section>
+
+  <!-- About Preview -->
+  <section>
+    <div class="section-title fade-in">
+      <h2>Our Story</h2>
+      <p>Rooted in tradition. Crafted for the modern world.</p>
+      <div class="line"></div>
+    </div>
+    <div style="max-width: 700px; margin: 0 auto; text-align: center;" class="fade-in">
+      <p style="margin-bottom: 20px;">
+        Maison Àṣà is a fashion house born from the rich tapestry of African culture. 
+        "Àṣà" — the Yoruba word for style and tradition — is at the heart of everything we create. 
+        Our pieces blend indigenous craftsmanship with contemporary design, creating fashion that 
+        tells a story.
+      </p>
+      <p>
+        Founded in Lagos, Nigeria, we celebrate the beauty of African textiles — Ankara, Adire, 
+        Aso-Oke — reimagined for the global stage. Every stitch carries the spirit of heritage, 
+        every silhouette speaks to the future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Products Preview -->
+  <section>
+    <div class="section-title fade-in">
+      <h2>Featured Pieces</h2>
+      <p>From our latest collection</p>
+      <div class="line"></div>
+    </div>
+    <div class="products-grid">
+      <div class="product-card fade-in">
+        <div class="product-image">👗</div>
+        <div class="product-info">
+          <h3>The Lagos Gown</h3>
+          <p>Hand-dyed Adire silk evening gown</p>
+          <p class="price">₦185,000</p>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <div class="product-image">🧥</div>
+        <div class="product-info">
+          <h3>Heritage Blazer</h3>
+          <p>Ankara-lined structured blazer</p>
+          <p class="price">₦120,000</p>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <div class="product-image">👜</div>
+        <div class="product-info">
+          <h3>Àṣà Tote</h3>
+          <p>Handwoven leather and Aso-Oke tote</p>
+          <p class="price">₦75,000</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;" class="fade-in">
+      <a href="products.html" class="btn" style="border:2px solid #1a1a1a; color:#1a1a1a; padding:12px 35px; font-size:0.8rem; letter-spacing:3px; text-transform:uppercase; display:inline-block;">View All Collections</a>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="backToTop" style="display:none; position:fixed; bottom:30px; right:30px; padding:12px 16px; background:#1a1a1a; color:#d4af37; border:1px solid #d4af37; cursor:pointer; font-size:1.2rem; z-index:999;">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Maison <span>Àṣà</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collections</a>
+      <a href="team.html">Our Team</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="currentYear"></span> Maison Àṣà. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

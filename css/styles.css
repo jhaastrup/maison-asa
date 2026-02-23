@@ -1,0 +1,550 @@
+/* ============================================
+   MAISON ÀṢÀ — External Stylesheet
+   Fashion House Website | CSC 106/IFT 203
+   ============================================ */
+
+/* --- Reset & Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #1a1a1a;
+  background-color: #faf9f6;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* --- Marquee Banner --- */
+.marquee-banner {
+  background-color: #1a1a1a;
+  color: #d4af37;
+  padding: 10px 0;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-banner .marquee-content {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
+
+/* --- Header & Navigation --- */
+header {
+  background-color: #faf9f6;
+  border-bottom: 1px solid #e0d9cf;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.logo span {
+  color: #d4af37;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #1a1a1a;
+  border-bottom: 2px solid #d4af37;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+/* --- Hero Section --- */
+.hero {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #3a3a3a 100%);
+  color: #faf9f6;
+  padding: 0 30px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #d4af37;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 15px 45px;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #d4af37;
+  color: #1a1a1a;
+}
+
+/* --- Sections --- */
+section {
+  padding: 80px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #888;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 2px;
+  background-color: #d4af37;
+  margin: 15px auto 0;
+}
+
+/* --- Product Cards --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #e8e4dc;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-card .product-image {
+  height: 320px;
+  background-color: #e8e4dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #bbb;
+  overflow: hidden;
+}
+
+.product-card .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card .product-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.product-card .product-info h3 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.product-card .product-info p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.product-card .product-info .price {
+  color: #d4af37;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* --- Team / Board of Trustees --- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member .member-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-color: #e8e4dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #bbb;
+  overflow: hidden;
+  border: 3px solid #d4af37;
+}
+
+.team-member .member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.team-member .role {
+  color: #d4af37;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #888;
+  font-size: 0.9rem;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* --- Events --- */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.event-card {
+  display: flex;
+  gap: 30px;
+  background: #fff;
+  border: 1px solid #e8e4dc;
+  padding: 30px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateX(5px);
+}
+
+.event-date {
+  text-align: center;
+  min-width: 80px;
+  padding: 15px;
+  background: #1a1a1a;
+  color: #d4af37;
+}
+
+.event-date .day {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.event-date .month {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.event-details h3 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.event-details p {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.event-details .event-location {
+  color: #d4af37;
+  font-size: 0.85rem;
+}
+
+/* --- Contact Form --- */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-info h3 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #888;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.contact-info .info-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.contact-info .info-item .icon {
+  font-size: 1.2rem;
+  color: #d4af37;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 15px;
+  border: 1px solid #e0d9cf;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: #d4af37;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 15px 45px;
+  background-color: #1a1a1a;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.contact-form button:hover {
+  background-color: #d4af37;
+  color: #1a1a1a;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #1a1a1a;
+  color: #999;
+  text-align: center;
+  padding: 40px 30px;
+  margin-top: 60px;
+}
+
+footer .footer-logo {
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #faf9f6;
+  margin-bottom: 10px;
+}
+
+footer .footer-logo span {
+  color: #d4af37;
+}
+
+footer p {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+footer .footer-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+footer .footer-links a {
+  color: #999;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+footer .footer-links a:hover {
+  color: #d4af37;
+}
+
+/* --- Utility --- */
+.text-gold { color: #d4af37; }
+.bg-dark { background-color: #1a1a1a; color: #faf9f6; }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+    letter-spacing: 6px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #faf9f6;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0d9cf;
+    gap: 15px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

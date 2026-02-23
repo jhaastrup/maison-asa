@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Àṣà — Our Team</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-content">
+      ✦ SPRING/SUMMER 2026 COLLECTION NOW AVAILABLE &nbsp;&nbsp;&nbsp; ✦ LAGOS FASHION WEEK — APRIL 15-18 &nbsp;&nbsp;&nbsp; ✦ BOOK YOUR PRIVATE STYLING SESSION TODAY &nbsp;&nbsp;&nbsp; ✦ FREE SHIPPING ON ORDERS OVER ₦50,000 &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Maison <span>Àṣà</span></a>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Board of Trustees -->
+  <section>
+    <div class="section-title fade-in">
+      <h2>Board of Trustees</h2>
+      <p>The visionaries behind Maison Àṣà</p>
+      <div class="line"></div>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-member fade-in">
+        <div class="member-photo">👩🏾</div>
+        <h3>Adejoke Haastrup</h3>
+        <p class="role">Founder & Creative Director</p>
+        <p>Visionary designer blending African heritage with modern silhouettes. Passionate about empowering African fashion globally.</p>
+      </div>
+
+      <div class="team-member fade-in">
+        <div class="member-photo">👨🏾</div>
+        <h3>Temiloluwa Orekunrin</h3>
+        <p class="role">Head of Operations</p>
+        <p>Ensures the seamless production and delivery of every piece. Brings 10 years of fashion industry logistics expertise.</p>
+      </div>
+
+      <div class="team-member fade-in">
+        <div class="member-photo">👩🏽</div>
+        <h3>Angel Okechukwu</h3>
+        <p class="role">Lead Designer</p>
+        <p>Textile artist specializing in traditional dyeing techniques. Creates the signature prints that define Maison Àṣà.</p>
+      </div>
+
+      <div class="team-member fade-in">
+        <div class="member-photo">👨🏿</div>
+        <h3>Habeeb Ajibola</h3>
+        <p class="role">Marketing Director</p>
+        <p>Digital storyteller connecting Maison Àṣà with fashion lovers worldwide. Champion of African luxury branding.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="bg-dark" style="max-width:100%; padding:80px 30px;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div class="section-title fade-in">
+        <h2 style="color:#faf9f6;">Our Values</h2>
+        <p style="color:#999;">What guides everything we do</p>
+        <div class="line"></div>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:40px; text-align:center;">
+        <div class="fade-in">
+          <p style="font-size:2.5rem; margin-bottom:15px;">🌍</p>
+          <h3 style="letter-spacing:2px; text-transform:uppercase; margin-bottom:10px; font-size:0.95rem;">Heritage</h3>
+          <p style="color:#999; font-size:0.9rem;">Every piece honours the rich traditions of African textile artistry and craftsmanship.</p>
+        </div>
+        <div class="fade-in">
+          <p style="font-size:2.5rem; margin-bottom:15px;">🌱</p>
+          <h3 style="letter-spacing:2px; text-transform:uppercase; margin-bottom:10px; font-size:0.95rem;">Sustainability</h3>
+          <p style="color:#999; font-size:0.9rem;">We use natural dyes, ethical sourcing, and fair-trade practices in all our production.</p>
+        </div>
+        <div class="fade-in">
+          <p style="font-size:2.5rem; margin-bottom:15px;">✨</p>
+          <h3 style="letter-spacing:2px; text-transform:uppercase; margin-bottom:10px; font-size:0.95rem;">Innovation</h3>
+          <p style="color:#999; font-size:0.9rem;">We push boundaries by reimagining traditional designs for the contemporary world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="backToTop" style="display:none; position:fixed; bottom:30px; right:30px; padding:12px 16px; background:#1a1a1a; color:#d4af37; border:1px solid #d4af37; cursor:pointer; font-size:1.2rem; z-index:999;">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Maison <span>Àṣà</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collections</a>
+      <a href="team.html">Our Team</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="currentYear"></span> Maison Àṣà. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
