@@ -1,4 +1,4 @@
-# Maison Àṣà 🌍✨
+# Maison Àṣà
 
 > *Where African Heritage Meets Modern Elegance*
 
