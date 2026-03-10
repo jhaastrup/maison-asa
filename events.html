@@ -1,125 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maison Àṣà — Events</title>
-  <link rel="stylesheet" href="css/styles.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maison Àṣà — Events</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
 
-  <!-- Marquee Banner -->
-  <div class="marquee-banner">
-    <div class="marquee-content">
-      ✦ SPRING/SUMMER 2026 COLLECTION NOW AVAILABLE &nbsp;&nbsp;&nbsp; ✦ LAGOS FASHION WEEK — APRIL 15-18 &nbsp;&nbsp;&nbsp; ✦ BOOK YOUR PRIVATE STYLING SESSION TODAY &nbsp;&nbsp;&nbsp; ✦ FREE SHIPPING ON ORDERS OVER ₦50,000 &nbsp;&nbsp;&nbsp;
-    </div>
-  </div>
 
-  <!-- Header & Navigation -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="logo">Maison <span>Àṣà</span></a>
-      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-      <nav>
-        <ul id="navMenu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Collections</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="events.html">Events</a></li> 
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- NAVIGATION -->
 
-  <!-- Countdown to Next Event -->
-  <section style="text-align:center;">
-    <div class="section-title fade-in">
-      <h2>Next Event</h2>
-      <p>Lagos Fashion Week 2026</p>
-      <div class="line"></div>
-    </div>
-    <div class="fade-in" style="background:#1a1a1a; padding:40px; display:inline-block; margin-bottom:20px;">
-      <p style="color:#999; font-size:0.8rem; letter-spacing:3px; text-transform:uppercase; margin-bottom:10px;">Countdown</p>
-      <p id="eventCountdown" style="color:#d4af37; font-size:2.5rem; letter-spacing:4px; font-weight:bold;"></p>
-    </div>
-  </section>
+<header>
 
-  <!-- Upcoming Events -->
-  <section>
-    <div class="section-title fade-in">
-      <h2>Upcoming Events</h2>
-      <p>Join us at these exclusive fashion experiences</p>
-      <div class="line"></div>
-    </div>
+<div class="nav-container">
 
-    <div class="events-list">
-      <div class="event-card fade-in">
-        <div class="event-date">
-          <span class="day">15</span>
-          <span class="month">Apr</span>
-        </div>
-        <div class="event-details">
-          <h3>Lagos Fashion Week 2026</h3>
-          <p>Maison Àṣà presents our Spring/Summer 2026 collection on the runway. Experience the fusion of tradition and modernity live.</p>
-          <p class="event-location">📍 Federal Palace Hotel, Victoria Island, Lagos</p>
-        </div>
-      </div>
+<a href="index.html" class="logo">
+Maison <span>Àṣà</span>
+</a>
 
-      <div class="event-card fade-in">
-        <div class="event-date">
-          <span class="day">28</span>
-          <span class="month">Apr</span>
-        </div>
-        <div class="event-details">
-          <h3>Adire Workshop: The Art of Indigo</h3>
-          <p>A hands-on workshop exploring traditional Adire dyeing techniques. Learn the craft behind our signature fabrics.</p>
-          <p class="event-location">📍 Maison Àṣà Atelier, Lekki, Lagos</p>
-        </div>
-      </div>
+<button class="nav-toggle" onclick="toggleMenu()">☰</button>
 
-      <div class="event-card fade-in">
-        <div class="event-date">
-          <span class="day">10</span>
-          <span class="month">May</span>
-        </div>
-        <div class="event-details">
-          <h3>Pop-Up Shop: Abuja</h3>
-          <p>Three days of exclusive shopping in the capital. First look at limited-edition pieces not available online.</p>
-          <p class="event-location">📍 Jabi Lake Mall, Abuja</p>
-        </div>
-      </div>
+<nav>
 
-      <div class="event-card fade-in">
-        <div class="event-date">
-          <span class="day">22</span>
-          <span class="month">Jun</span>
-        </div>
-        <div class="event-details">
-          <h3>African Fashion Summit</h3>
-          <p>Panel discussion on the future of African fashion in the global market. Featuring leading designers and industry experts.</p>
-          <p class="event-location">📍 Eko Convention Centre, Lagos</p>
-        </div>
-      </div>
+<ul id="navMenu">
 
-      <div class="event-card fade-in">
-        <div class="event-date">
-          <span class="day">05</span>
-          <span class="month">Aug</span>
-        </div>
-        <div class="event-details">
-          <h3>Maison Àṣà Anniversary Gala</h3>
-          <p>Celebrating one year of redefining African luxury fashion. An evening of fashion, music, and culture.</p>
-          <p class="event-location">📍 Wheatbaker Hotel, Ikoyi, Lagos</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Collections</a></li>
+<li><a href="team.html">Our Team</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
 
-  <!-- Back to Top -->
-  <button id="backToTop" style="display:none; position:fixed; bottom:30px; right:30px; padding:12px 16px; background:#1a1a1a; color:#d4af37; border:1px solid #d4af37; cursor:pointer; font-size:1.2rem; z-index:999;">↑</button>
+</ul>
 
-  <!-- Footer -->
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- NEXT EVENT -->
+
+<section class="next-event-section">
+
+<div class="section-title">
+
+<h2>Next Event</h2>
+<p>Lagos Fashion Week 2026</p>
+
+</div>
+
+
+<div class="next-event-card">
+
+<img src="images/event-fashion-week.jpg">
+
+<div class="next-event-info">
+
+<p class="event-highlight">
+Featured Runway Event
+</p>
+
+<h3>Lagos Fashion Week 2026</h3>
+
+<p>
+Maison Àṣà unveils the Spring/Summer 2026 collection on the runway —
+a celebration of African heritage blended with contemporary luxury.
+</p>
+
+<p class="event-location">
+📍 Federal Palace Hotel, Victoria Island, Lagos
+</p>
+
+
+<div class="countdown-container">
+
+<p class="countdown-label">Countdown</p>
+
+<p id="eventCountdown" class="countdown-time"></p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- UPCOMING EVENTS -->
+
+<section class="events-section">
+
+<div class="section-title">
+
+<h2>Upcoming Events</h2>
+<p>Join our fashion experiences</p>
+
+</div>
+
+
+
+<div class="events-grid">
+
+
+<!-- EVENT 1 -->
+
+<div class="event-card">
+
+<img src="images/event-adire.jpg">
+
+<div class="event-overlay">
+
+<div class="event-date">
+<span class="day">28</span>
+<span class="month">APR</span>
+</div>
+
+<div class="event-info">
+
+<p class="event-location">Lekki, Lagos</p>
+
+<h3>Adire Workshop</h3>
+
+<a href="#" class="event-btn">Register Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- EVENT 2 -->
+
+<div class="event-card">
+
+<img src="images/event-popup.jpg">
+
+<div class="event-overlay">
+
+<div class="event-date">
+<span class="day">10</span>
+<span class="month">MAY</span>
+</div>
+
+<div class="event-info">
+
+<p class="event-location">Abuja</p>
+
+<h3>Pop Up Shop Abuja</h3>
+
+<a href="#" class="event-btn">Register Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- EVENT 3 -->
+
+<div class="event-card">
+
+<img src="images/event-summit.jpg">
+
+<div class="event-overlay">
+
+<div class="event-date">
+<span class="day">22</span>
+<span class="month">JUN</span>
+</div>
+
+<div class="event-info">
+
+<p class="event-location">Eko Hotel, Lagos</p>
+
+<h3>African Fashion Summit</h3>
+
+<a href="#" class="event-btn">Register Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- EVENT 4 -->
+
+<div class="event-card">
+
+<img src="images/event-gala.jpg">
+
+<div class="event-overlay">
+
+<div class="event-date">
+<span class="day">05</span>
+<span class="month">AUG</span>
+</div>
+
+<div class="event-info">
+
+<p class="event-location">Ikoyi, Lagos</p>
+
+<h3>Maison Àṣà Anniversary Gala</h3>
+
+<a href="#" class="event-btn">Register Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- Footer -->
   <footer>
     <div class="footer-logo">Maison <span>Àṣà</span></div>
     <div class="footer-links">
@@ -132,6 +246,8 @@
     <p>&copy; <span id="currentYear"></span> Maison Àṣà. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
